@@ -144,12 +144,13 @@ public class AdminController {
     public void connect(){
         try {
             this.conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/cepetdong", 
+                    "jdbc:mysql://localhost:3306/pbo", 
                     "root",
                     "");
             this.stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         } catch (Exception e) {
             e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
     

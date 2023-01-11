@@ -192,7 +192,7 @@ public class landingView extends javax.swing.JFrame {
 
     private void btnDaftarAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDaftarAdminActionPerformed
         // TODO add your handling code here:
-        LoginViewAdmin logView = new LoginViewAdmin();
+        RegisterViewAdmin logView = new RegisterViewAdmin();
         logView.show();
         dispose();
     }//GEN-LAST:event_btnDaftarAdminActionPerformed

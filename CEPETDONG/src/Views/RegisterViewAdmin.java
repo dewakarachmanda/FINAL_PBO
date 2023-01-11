@@ -31,7 +31,7 @@ public class RegisterViewAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        input_nohp = new javax.swing.JTextField();
+        input_id = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -40,7 +40,7 @@ public class RegisterViewAdmin extends javax.swing.JFrame {
         btn_reg = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         btn_to_login = new javax.swing.JButton();
-        input_id = new javax.swing.JTextField();
+        input_nohp = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -49,8 +49,8 @@ public class RegisterViewAdmin extends javax.swing.JFrame {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(428, 510));
         jPanel1.setLayout(null);
-        jPanel1.add(input_nohp);
-        input_nohp.setBounds(160, 210, 210, 22);
+        jPanel1.add(input_id);
+        input_id.setBounds(160, 210, 210, 22);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("REGISTER ADMIN PAGE");
@@ -108,13 +108,13 @@ public class RegisterViewAdmin extends javax.swing.JFrame {
         jPanel1.add(btn_to_login);
         btn_to_login.setBounds(330, 460, 80, 40);
 
-        input_id.addActionListener(new java.awt.event.ActionListener() {
+        input_nohp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                input_idActionPerformed(evt);
+                input_nohpActionPerformed(evt);
             }
         });
-        jPanel1.add(input_id);
-        input_id.setBounds(160, 260, 210, 22);
+        jPanel1.add(input_nohp);
+        input_nohp.setBounds(160, 260, 210, 22);
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 13)); // NOI18N
         jLabel7.setText("ID, dan nomor Hp yang digunakan");
@@ -181,9 +181,9 @@ public class RegisterViewAdmin extends javax.swing.JFrame {
         logView.show();
     }//GEN-LAST:event_btn_to_loginActionPerformed
 
-    private void input_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_idActionPerformed
+    private void input_nohpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_nohpActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_input_idActionPerformed
+    }//GEN-LAST:event_input_nohpActionPerformed
 
     /**
      * @param args the command line arguments

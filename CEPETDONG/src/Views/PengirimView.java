@@ -38,10 +38,10 @@ public class PengirimView extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        input_alamat = new javax.swing.JTextField();
         input_paket = new javax.swing.JTextField();
         input_berat = new javax.swing.JTextField();
         input_kuantitas = new javax.swing.JTextField();
-        input_alamat = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -80,20 +80,20 @@ public class PengirimView extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(40, 400, 100, 40);
-        jPanel1.add(input_paket);
-        input_paket.setBounds(140, 250, 220, 110);
+        jPanel1.add(input_alamat);
+        input_alamat.setBounds(140, 250, 220, 110);
 
-        input_berat.addActionListener(new java.awt.event.ActionListener() {
+        input_paket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                input_beratActionPerformed(evt);
+                input_paketActionPerformed(evt);
             }
         });
+        jPanel1.add(input_paket);
+        input_paket.setBounds(140, 130, 220, 22);
         jPanel1.add(input_berat);
-        input_berat.setBounds(140, 130, 220, 22);
+        input_berat.setBounds(140, 170, 190, 22);
         jPanel1.add(input_kuantitas);
-        input_kuantitas.setBounds(140, 170, 190, 22);
-        jPanel1.add(input_alamat);
-        input_alamat.setBounds(140, 210, 220, 22);
+        input_kuantitas.setBounds(140, 210, 220, 22);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("MASUKKAN DATA PAKET ANDA");
@@ -175,9 +175,9 @@ public class PengirimView extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void input_beratActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_beratActionPerformed
+    private void input_paketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_paketActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_input_beratActionPerformed
+    }//GEN-LAST:event_input_paketActionPerformed
 
     /**
      * @param args the command line arguments

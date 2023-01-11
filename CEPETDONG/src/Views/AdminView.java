@@ -65,13 +65,13 @@ public class AdminView extends javax.swing.JFrame {
         isi_harga = new javax.swing.JTextField();
         isi_resi = new javax.swing.JTextField();
         show_paket = new javax.swing.JLabel();
-        show_berat = new javax.swing.JLabel();
+        jshow = new javax.swing.JLabel();
         show_status = new javax.swing.JLabel();
         show_kuantitas = new javax.swing.JLabel();
         show_alamat = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        show_berat1 = new javax.swing.JLabel();
+        show_berat = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -154,9 +154,9 @@ public class AdminView extends javax.swing.JFrame {
         jPanel2.add(show_paket);
         show_paket.setBounds(270, 120, 120, 16);
 
-        show_berat.setText("Kg");
-        jPanel2.add(show_berat);
-        show_berat.setBounds(380, 150, 20, 16);
+        jshow.setText("Kg");
+        jPanel2.add(jshow);
+        jshow.setBounds(380, 150, 20, 16);
 
         show_status.setText("E");
         jPanel2.add(show_status);
@@ -190,9 +190,9 @@ public class AdminView extends javax.swing.JFrame {
         jPanel2.add(jButton2);
         jButton2.setBounds(70, 400, 90, 40);
 
-        show_berat1.setText("B");
-        jPanel2.add(show_berat1);
-        show_berat1.setBounds(270, 150, 20, 16);
+        show_berat.setText("B");
+        jPanel2.add(show_berat);
+        show_berat.setBounds(270, 150, 20, 16);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Admin View.png"))); // NOI18N
         jPanel2.add(jLabel3);
@@ -276,11 +276,11 @@ public class AdminView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jshow;
     private javax.swing.JList<String> listpaket;
     private javax.swing.JLabel nama_admin;
     private javax.swing.JLabel show_alamat;
     private javax.swing.JLabel show_berat;
-    private javax.swing.JLabel show_berat1;
     private javax.swing.JLabel show_kuantitas;
     private javax.swing.JLabel show_paket;
     private javax.swing.JLabel show_status;

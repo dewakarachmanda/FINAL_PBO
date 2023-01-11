@@ -147,7 +147,7 @@ public class PengirimController {
     public void connect(){
         try {
             this.conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/cepetdong", 
+                    "jdbc:mysql://localhost:3306/pbo", 
                     "root",
                     "");
             this.stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);

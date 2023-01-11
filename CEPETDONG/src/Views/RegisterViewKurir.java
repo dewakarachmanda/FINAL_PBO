@@ -39,7 +39,7 @@ public class RegisterViewKurir extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         config_idkurir = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        input_user_reg3 = new javax.swing.JTextField();
+        input_user_reg = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         btn_reg = new javax.swing.JButton();
@@ -101,13 +101,13 @@ public class RegisterViewKurir extends javax.swing.JFrame {
         jPanel1.add(jLabel6);
         jLabel6.setBounds(40, 110, 350, 19);
 
-        input_user_reg3.addActionListener(new java.awt.event.ActionListener() {
+        input_user_reg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                input_user_reg3ActionPerformed(evt);
+                input_user_regActionPerformed(evt);
             }
         });
-        jPanel1.add(input_user_reg3);
-        input_user_reg3.setBounds(120, 160, 270, 22);
+        jPanel1.add(input_user_reg);
+        input_user_reg.setBounds(120, 160, 270, 22);
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel7.setText("Name");
@@ -181,14 +181,14 @@ public class RegisterViewKurir extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_config_idkurirActionPerformed
 
-    private void input_user_reg3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_user_reg3ActionPerformed
+    private void input_user_regActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_user_regActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_input_user_reg3ActionPerformed
+    }//GEN-LAST:event_input_user_regActionPerformed
 
     private void btn_regActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regActionPerformed
         // TODO add your handling code here:
         try {
-            String nama = input_nohp.getText();
+            String nama = input_user_reg.getText();
             String ID = input_id.getText();
             int nohp = Integer.parseInt(input_nohp.getText());
             //            String password = String.valueOf(input_pass_reg.getPassword());
@@ -202,7 +202,7 @@ public class RegisterViewKurir extends javax.swing.JFrame {
             else {
                 ctrl.registerUser(IDKurir, ID,nama, nohp);
                 this.dispose();
-                LoginViewAdmin logView = new LoginViewAdmin();
+                LoginViewKurir logView = new LoginViewKurir();
                 logView.show();
             }
         } catch (Exception e) {
@@ -259,7 +259,7 @@ public class RegisterViewKurir extends javax.swing.JFrame {
     private javax.swing.JTextField config_idkurir;
     private javax.swing.JTextField input_id;
     private javax.swing.JTextField input_nohp;
-    private javax.swing.JTextField input_user_reg3;
+    private javax.swing.JTextField input_user_reg;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

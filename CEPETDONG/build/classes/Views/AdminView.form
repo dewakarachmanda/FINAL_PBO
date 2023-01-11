@@ -237,7 +237,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="show_berat">
+        <Component class="javax.swing.JLabel" name="jshow">
           <Properties>
             <Property name="text" type="java.lang.String" value="Kg"/>
           </Properties>
@@ -309,7 +309,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="show_berat1">
+        <Component class="javax.swing.JLabel" name="show_berat">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
